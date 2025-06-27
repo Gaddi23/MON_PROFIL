@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nom Prénom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="profile.jpg" alt="Photo de profil" class="profile">
+            <div class="header-text">
+                <h1>TCHATCHOUA DJEUKWOUA GADDIELA</h1>
+                <p>Étudiante en GL - Niveau B1</p>
+                <p>KEYCE Academy</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="skills">
+            <h2>Compétences Techniques</h2>
+            <div class="button-group">
+                <button onclick="showSkill('HTML')">HTML</button>
+                <button onclick="showSkill('CSS')">CSS</button>
+                <button onclick="showSkill('JavaScript')">JavaScript</button>
+                <button onclick="showSkill('Git')">Git</button>
+                <button onclick="showSkill('SQL')">SQL</button>
+            </div>
+            <div id="description" class="description-box"></div>
+
+            <div class="click-stats">
+                <h3>Compétences vues :</h3>
+                <ul id="clickCounts"></ul>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <h2>Me Contacter</h2>
+            <ul class="contact-list">
+                <li><strong>Téléphone :</strong> <span id="phone"></span></li>
+                <li><strong>Email :</strong> <span id="email"></span></li>
+                <li><strong>Github :</strong> <a id="Github" href="#" target="_blank">Profil Github</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ANNEE ACADEMIQUE 2024-2025 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
